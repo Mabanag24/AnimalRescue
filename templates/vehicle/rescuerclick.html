@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+  <div class="jumbotron" style="margin-bottom:0px;">
+    <h1 class="display-4">Hello, Rescuer</h1>
+    <p class="lead">Welcome to Home for Paws</p>
+    <p class="lead">Be a PAWS Rescuer</p>
+    <hr class="my-4">
+    <p>You can access your account after Login.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="rescuersignup" role="button">Apply For Rescuer</a>
+      <a class="btn btn-primary btn-lg" href="rescuerlogin" role="button">Login</a>
+    </p>
+  </div>
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>

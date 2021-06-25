@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+</head>
+
+<body>
+
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+
+  <center>
+    <h3 class='alert alert-success'>Thankyou for Visiting Our Site !</h3>
+
+    <form method="POST">
+      <!-- Very Important csrf Token -->
+      {% csrf_token %}
+      <div class="form-group">
+        <p>
+          Location: Dasmarinas City Cavite Saint Peter
+          <br>
+          Contact Number: 0950904512
+          <br>
+          Facebook: Www.facebook.com
+          <br>
+          Instagram: Animalia.ph
+          <br>
+          Mission :Loving all homeless animalas and build a better community
+          <br>
+          Vision: Loyalty comes to you, So be ready.
+        <!-- <h3>{{ form.as_p }}</h3> -->
+        </p>
+        <br>
+        <!-- <input type="submit" value="Send Message" class='btn btn-primary btn-lg'> -->
+      </div>
+      {% csrf_token %}
+    </form>
+  </center>
+  <marquee behavior="scroll" direction="left">
+   <img src="{% static "images/am1.png" %}" width="120" height="80" alt="ferrari" />
+    <img src="{% static "images/am2.png" %}" width="120" height="80" alt="ford" />
+   <img src="{% static "images/am3.png" %}" width="120" height="80" alt="lambo" />
+   <img src="{% static "images/am4.png" %}" width="120" height="80" alt="mahindra" />
+   <img src="{% static "images/am5.png" %}" width="120" height="80" alt="tvs" />
+   <img src="{% static "images/am6.png" %}" width="120" height="80" alt="tata" />
+   <img src="{% static "images/am7.png" %}" width="120" height="80" alt="hero" />
+   <img src="{% static "images/am8.png" %}" width="120" height="80" alt="rolls" />
+   <img src="{% static "images/am9.png" %}" width="120" height="80" alt="suzuki" />
+ </marquee>
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>
